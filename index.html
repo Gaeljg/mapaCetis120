@@ -10,37 +10,39 @@
 </head>
 <body>
     <center>
-    <h1>Mapa del Cetis 120</h1>
-    <div>
-        <h3>¿Hacia donde quieres ir?</h3>
-        <form name="formu">
-            <select id="entradaDatos" onchange="ey();">
-                <option value="0" selected>Edificios</option>
-                <option value="edificioA">Edificio A</option>
-                <option value="edificioB">Edificio B</option>
-                <option value="edificioC">Edificio C</option>
-                <option value="edificioD">Edificio D</option>
-                <option value="edificioE">Edificio E</option>
-                <option value="edificioF">Edificio F</option>
-                <option value="edificioG">Edificio G</option>
-                <option value="edificioH">Edificio H</option>
-                <option value="edificioJ">Edificio J</option>
-                <option value="edificioK">Edificio K</option>
-                <option value="edificioL">Edificio L</option>
-                <option value="canchas">Canchas</option>
-            </select>
-            <select id="aulas">
+    <div id="general">
+        <h1>Mapa del Cetis 120</h1>
+        <div>
+            <h3>¿Hacia donde quieres ir?</h3>
+            <form name="formu">
+                <select id="entradaDatos" onchange="ey();">
+                    <option value="0" selected>Edificios</option>
+                    <option value="edificioA">Edificio A</option>
+                    <option value="edificioB">Edificio B</option>
+                    <option value="edificioC">Edificio C</option>
+                    <option value="edificioD">Edificio D</option>
+                    <option value="edificioE">Edificio E</option>
+                    <option value="edificioF">Edificio F</option>
+                    <option value="edificioG">Edificio G</option>
+                    <option value="edificioH">Edificio H</option>
+                    <option value="edificioJ">Edificio J</option>
+                    <option value="edificioK">Edificio K</option>
+                    <option value="edificioL">Edificio L</option>
+                    <option value="canchas">Canchas</option>
+                </select>
+                <select id="aulas">
 
-            </select>
-        </form>
-        <button id="botonP">Presioname</button>
+                </select>
+            </form>
+            <button id="botonP">Presioname</button>
+        </div>
+        <div id="mapa1">
+            <canvas id="canvas" width="1086" height="1920">
+                    Tu navegador no admite el elemento &lt;canvas&gt;.
+            </canvas>
+        <div>
+        <p style="text-align: right;">Version 1.0</p>
     </div>
-    <div id="mapa1" style="width: 90%; height: auto;">
-        <canvas id="canvas" width="1086" height="1920">
-                Tu navegador no admite el elemento &lt;canvas&gt;.
-        </canvas>
-    <div>
-    <p style="text-align: right;">Version 1.0</p>
     <script src="script.js"></script>
 </center>
 </body>
